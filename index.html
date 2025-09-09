@@ -1,11 +1,122 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello World</title>
-  </head>
-  <body>
-    <h1>Hello World 👋</h1>
-    <p>If you see this, your GitHub Pages site is working!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jonathan Sorrels — Analytics & Data Science</title>
+  <meta name="description" content="Projects in SQL, Python, ETL, and BI. Aviation pro transitioning to analytics." />
+  <style>
+    :root { --bg:#0f1222; --card:#151833; --text:#e7e9ef; --muted:#aab0c3; --accent:#7cc6ff; --chip:#22264a; }
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#0d1020, #0f1222);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1024px;margin:0 auto;padding:24px}
+    header{padding:36px 0 12px;border-bottom:1px solid #23264a;margin-bottom:24px}
+    h1{margin:0 0 8px;font-size:2rem} .sub{color:var(--muted)}
+    nav{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;background:var(--card);padding:8px 12px;border-radius:10px;border:1px solid #272a51}
+    section{margin:32px 0}
+    h2{margin:0 0 12px;font-size:1.25rem}
+    .grid{display:grid;gap:16px}
+    @media (min-width:720px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    .card{background:var(--card);padding:16px;border:1px solid #23264a;border-radius:16px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+    .chip{background:var(--chip);padding:4px 8px;border-radius:999px;font-size:.85rem;color:var(--muted);border:1px solid #2b2e5a}
+    .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    footer{margin:40px 0 8px;color:var(--muted);font-size:.9rem;text-align:center}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Jonathan Sorrels</h1>
+      <div class="sub">Analytics & Data Science • SQL · Python · BI</div>
+      <nav>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#skills">Skills</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="https://github.com/Jonathan1661">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a>
+        <a class="btn" href="resume.pdf">Resume (PDF)</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="muted">
+        Flight Planning Analyst pivoting into data analytics. M.S. in Business Analytics & Data Science (OSU).
+        I like taming messy data, building reliable ETL, and shipping clear visuals that decision-makers can use.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <div class="chip">SQL (PostgreSQL, SQL Server)</div>
+        <div class="chip">Python (pandas, scikit-learn)</div>
+        <div class="chip">ETL / Data Modeling</div>
+        <div class="chip">SSIS / Azure Data Studio</div>
+        <div class="chip">Power BI / Tableau</div>
+        <div class="chip">Git / GitHub</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Ethereum Price Trends — 2,000 Days</h3>
+          <p class="muted">Explored seasonality and volatility; built a baseline forecasting pipeline and evaluation.</p>
+          <div class="chips"><div class="chip">Python</div><div class="chip">pandas</div><div class="chip">Forecasting</div></div>
+          <div class="row">
+            <a href="https://github.com/Jonathan1661/REPO-eth-prices">Code</a>
+            <a href="/projects/eth/index.html">Write-up</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Chicago Taxi — BI Insights</h3>
+          <p class="muted">Connected the public dataset to BigQuery; built KPIs and a simple fare/time dashboard.</p>
+          <div class="chips"><div class="chip">SQL</div><div class="chip">Power BI</div><div class="chip">BigQuery</div></div>
+          <div class="row">
+            <a href="https://github.com/Jonathan1661/REPO-chicago-taxi">Code</a>
+            <a href="#">Dashboard</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Healthcare CSVs → Clean Model Table</h3>
+          <p class="muted">Joined multi-file claims & demographics into a tidy model table with documented assumptions.</p>
+          <div class="chips"><div class="chip">Python</div><div class="chip">ETL</div><div class="chip">Data Quality</div></div>
+          <div class="row">
+            <a href="https://github.com/Jonathan1661/REPO-health-etl">Code</a>
+            <a href="#">Notebook</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>SSIS-Style ETL Practice (Postgres ↔ SQL Server)</h3>
+          <p class="muted">Modeled a small warehouse, built a repeatable load, and scheduled transforms.</p>
+          <div class="chips"><div class="chip">SQL Server</div><div class="chip">PostgreSQL</div><div class="chip">SSIS</div></div>
+          <div class="row">
+            <a href="https://github.com/Jonathan1661/REPO-ssis-practice">Code</a>
+            <a href="#">Design notes</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">
+        Best email for opportunities:
+        <a href="mailto:jonathan.sorrels@okstate.edu">jonathan.sorrels@okstate.edu</a>
+      </p>
+    </section>
+
+    <footer>© <span id="y"></span> Jonathan Sorrels</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
 </html>
